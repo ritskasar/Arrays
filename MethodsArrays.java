@@ -11,10 +11,16 @@ class MethodsArrays
 		int numbers[] = new int[size];  //declaration of array
 		System.out.println("Enter "+size +" numbers into array : ");
 
+        //Inputs
+
 		for(int i=0;i<size;i++)
 		{
 			numbers[i] = in.nextInt();
 		}
+
+        System.out.println();
+
+        //Search Number Method
 
 		System.out.println("Enter number which you want to find from array");
 		int n = in.nextInt();
@@ -28,17 +34,10 @@ class MethodsArrays
 			System.out.println(n +" Is not found at array . ");
 		}
 
-/*
-        System.out.println("Enter number which you want to change from array ");
+        System.out.println();
 
-		Arrays.fill(numbers,n);          //fill() Method...
+        // Sort Method used for ascending order
 
-		for(int i=0;i<size;i++)
-		{
-			System.out.println(Arrays.toString(numbers));
-		}
-
-*/
 		System.out.println("Sorted Integers" );
 
 		Arrays.sort(numbers);
@@ -46,6 +45,22 @@ class MethodsArrays
 		{
 		System.out.println(numbers[i]);
 	    }
+
+	   System.out.println();
+
+	    // Fill Method of Arrays
+
+
+		System.out.println("Enter number which you want to change from array ");
+
+		Arrays.fill(numbers,n);          //fill() Method...
+
+		for(int i=0;i<size;i++)
+		{
+			//System.out.println(Arrays.toString(numbers));
+			System.out.println(numbers[i]);
+		}
+
 
 
 	}
